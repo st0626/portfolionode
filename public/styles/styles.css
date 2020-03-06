@@ -6,3 +6,8 @@ img {
     height: 300px;
     padding-top: 25px;
 }
+
+.jumbotron {
+    background-image: url("/images/code.jpg");
+    height: 300px;
+}
