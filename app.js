@@ -15,16 +15,6 @@ const transporter = nodemailer.createTransport({
     }
   });
 
-
-
-
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////////
-
 const app = express();
 
 app.set("view engine", "ejs");
@@ -47,10 +37,15 @@ app.get("/projects", function(req, res){
 });
 
 app.post('/', function(req, res){
+    let firstName = req.body.fName;
+    let lastName = req.body.lName;
+    let phoneNum = req.body.phone;
     let email = req.body.email;
     let desc = req.body.description;
-    
     console.log({
+    first: firstName,
+    last: lastName,
+    phone: phoneNum,
     email: email,
     description: desc
     });
@@ -59,7 +54,7 @@ app.post('/', function(req, res){
         from: email,
         to: 'st06266@gmail.com',
         subject: 'Nodemailer: from ' + email,
-        text: desc
+        text: firstName + " " + lastName + "\n" + phoneNum + "\n" + desc
     }
 
     transporter.sendMail(mailOptions, function(error, info){

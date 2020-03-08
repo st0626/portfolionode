@@ -6,12 +6,24 @@
     <div class="col p-5">
         <form action="/" method="POST">
             <div class="form-group">
-            <label for="exampleFormControlInput1">Email address:</label>
-            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label>First Name:</label>
+                <input name="fName" class="form-control" placeholder="John" required>
             </div>
             <div class="form-group">
-            <label for="exampleFormControlTextarea1">Description of what needs to be done:</label>
-            <textarea name='description' class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                <label >Last Name:</label>
+                <input name="lName" class="form-control" placeholder="Doe" required>
+            </div>
+            <div class="form-group">
+                <label>Phone Number:</label>
+                <input name="phone" class="form-control" placeholder="(123)456-7890" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address:</label>
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Description of what needs to be done:</label>
+                <textarea name='description' class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             <div>
                 <button class="btn btn-primary" type="submit">Submit</button>
