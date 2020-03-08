@@ -27,4 +27,6 @@ img {
     border-radius: 2px;
     width: 25%;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
