@@ -33,6 +33,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 
 
+
+
+
+
+
 app.get("/", function(req, res){
     res.render("index");
 });
@@ -68,8 +73,10 @@ app.post('/', function(req, res){
 
 
 });
-
-
+// 404 handler
+app.use(function (req, res, next){
+    res.status(404).render('404');
+});
 
 
 app.listen(process.env.PORT || 5000);
