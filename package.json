@@ -13,6 +13,7 @@
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "nodemailer": "^6.4.4",
     "npm-start": "^1.4.2",
     "production": "0.0.2"
   }
