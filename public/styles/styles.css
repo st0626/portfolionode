@@ -25,4 +25,6 @@ img {
     background-color: #007BFF;
     color: white;
     border-radius: 2px;
+    width: 25%;
+    text-align: center;
 }
